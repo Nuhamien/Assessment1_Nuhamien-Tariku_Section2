@@ -6,7 +6,7 @@ body{
 }
 header{
     text-align: center;
-    background-color: rgb(167, 233, 211);
+    background-color: BG - #d9eed9;
     width: 100%;
     margin: 0;
     top: 0;
@@ -28,14 +28,8 @@ nav ul li a{
     padding: 0.5em 3em;
     margin-top :5em;
     margin-bottom:0;
-    color: rgb(167, 233, 211);
+    color:#4CAF50 ;
     text-decoration: none;
-}
-footer{
-    text-align: center;
-    background-color: rgb(167, 233, 211);
-    width: 100%;
-    position: absolute;
 }
 main { 
     padding: 20px; 
@@ -65,3 +59,39 @@ main {
     color: #4CAF50; 
     margin: 10px 0; 
 } 
+footer{
+    text-align: center;
+    background-color: #124314;
+    width: 100%;
+    position: absolute;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 0.5em 1em;
+    }
+
+    .product {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    header, footer {
+        position: relative;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .product {
+        flex: 1 1 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .product {
+        flex: 1 1 30%;
+    }
+}
